@@ -522,7 +522,6 @@ public:
 
   void network_proxy_settings_new(const std::string default_proxy_uri,
                                   const char *const *ignoreHosts) {
-      printf(default_proxy_uri.c_str());
       webkit_website_data_manager_set_network_proxy_settings(
         webkit_website_data_manager_new_ephemeral(), WEBKIT_NETWORK_PROXY_MODE_CUSTOM,
         webkit_network_proxy_settings_new(default_proxy_uri.c_str(),
